@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "base-chat-app"
+    }
+  },
+  "defaultProject": "base-chat-app",
+  "cli": {
+    "analytics": false
+  }
 }
