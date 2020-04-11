@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
-import { AngularFireDatabase, AngularFireObject, AngularFireList } from 'angularfire2/database';
-import { AngularFireModule   } from 'angularfire2';
-import { AngularFireAuth } from 'angularfire2/auth';
-import * as firebase from 'firebase';
+import {  AngularFireObject, AngularFireList } from 'angularfire2/database';
+import { AngularFireDatabase } from 'angularfire2/database';
 
 @Component({
   selector: 'app-root',
@@ -14,7 +12,7 @@ export class AppComponent {
   name: any;
   msgVal: String = '';
 
-  constructor(public af: AngularFire){ 
+  constructor(public af : AngularFire){ 
     this.item = af.database.list('/message', {
       query: {
          limitTOList: 5
